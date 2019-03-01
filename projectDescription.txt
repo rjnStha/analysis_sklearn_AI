@@ -1,0 +1,62 @@
+You have been provided a csv file. The fields in the file are comma-separated, but not column-aligned, and are as follows (listed along with the order in which they appear):
+
+    1. Identity Number - used only to identify records
+    Demographic information:
+        2. Sex (M/F)
+        3. Race encoded into a number
+        4. FirstGeneration (0 = no, 1 = yes) 
+    Prior prepartion information:
+        5. SAT Reading score
+        6. SAT Math score
+        7. High school GPA 
+    Treatment factors:
+        10. Major Type (1=CS, 2=Math, 3=Science, 4=Non-Science)
+        17. Instructor of Intro Course (encoded 1-9)
+        18. Instructor of Followup Course
+        19. Instructor of Fundamentals Course
+        20. Instructor of Systems Course 
+    Outcome variables:
+        8. Semesters taken to graduate (provided only for those who have already graduated)
+        9. Cumulative GPA (provided only for those who have already graduated)
+        11. Grade in Intro Course (Range: 0 - 4.0)
+        12. Grade in Followup Course
+        13. Grade in Fundamentals Course
+        14. Grade in Systems Course
+        15. Grade in Software Course
+        16. Grade in Paradigms Course 
+
+    Identify a question or hypothesis you want answered, e.g.,
+    who does better in college?
+    who graduates quickly?
+    who does well in the Intro course?
+
+    This should be about finding patterns in the data:
+    (e.g., what is the relationship between X,Y,Z and outcome variable A?)
+    not supporting a prior hunch:
+    (e.g., if X < 10, outcome variable A will be true.)
+    Pick the subdata you want to explore for the hypothesis, e.g., all CS majors, all first generation students, all whose high school GPA is 3.0 or more, or all who have graduated. Make sure you have at least 100 records in your selection. You may select records by either using Excel or extending Python program.
+    Identify the outcome variable for the hypothesis, e.g., cumulative GPA, grade in Intro course, number of semesters taken to graduate.
+    Run your analysis, capture the decision tree drawn by the software.
+    Include your hypothesis, selected subdata, outcome variable, any hyperparameter settings used for analysis, and results in your journal.
+    Repeat the above process with at least five different runs - testing five different hypotheses. 
+
+Your report must be your own - it cannot overlap the report of anyone else in terms of hypothesis, subdata, outcome variable, analysis or results. In your report, for each hypothesis, list the following, in order:
+
+    The hypothesis
+    Data:
+        Data preparation - when data points are combined into ranges, e.g., SAT scores are grouped into 30 or 50-point ranges.
+        Data selection - when a subset of the data is selected for analysis, e.g., All Computer Science majros only
+        Data Coding - when text data is coded into numeric data (e.g., Male = 1, Female = 2) or ranges are coded into numbers (e.g., GPA >= 3.0 is 1, GPA < 3.0 is 0)
+        Size of the selected data: Include both training and testing sizes 
+    Variables:
+        Outcome variable for your hypothesis
+        Input variables for your hypothesis 
+    Decision tree:
+        Maximum depth chosen for the decision tree
+        Accuracy of the tree for training data and for testing data
+        The decision tree 
+    Random forest:
+        Number of trees chosen for random forest
+        Salient input variables as per random forest analysis
+        Accuracy of prediction as per random forest 
+    Your analysis of the results, which should be detailed. 
